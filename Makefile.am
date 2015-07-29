@@ -684,7 +684,7 @@ pom.xml: pom.xml.in Makefile
 	mv $@-t ../$@
 
 TIMESTAMP := $(shell date +"%Y%m%d%H%M%S")
-RPM_REVISION := 1
+RPM_REVISION := 1.criteo
 RPM_TARGET := noarch
 RPM := opentsdb-$(subst -,_,$(PACKAGE_VERSION))-$(RPM_REVISION).$(RPM_TARGET).rpm
 RPM_SNAPSHOT := opentsdb-$(subst -,_,$(PACKAGE_VERSION))-$(RPM_REVISION)-$(TIMESTAMP)-"`whoami`".$(RPM_TARGET).rpm
